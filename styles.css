@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+img {
+    height: 450px;
+    border-radius: 8px;
+}
+body {
+    background: rgba(24, 24, 24, 0.89);
+    height: 100vh;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    letter-spacing: 38px;
+    height: 15vh;
+    color: bisque;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+main h2{
+    margin-top: 30px;
+    color: rgb(225, 223, 223);
+    font-size: 28px;
+    letter-spacing: 8px;
+}
+main .grid-menu {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15rem;
+}
+.grid-menu .card{
+    transition: transform 0.8s;
+}
+.grid-menu .card:hover{ 
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.transition-fade {
+    transition: .4s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
